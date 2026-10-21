@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<title>4SUPAN-LNGK4PMP4 </title>
+
+<!-- Adsterra Popunder -->
+<script src="https://cleavegrate.com/81/86/7d/81867d74d56554ace10a2edb1a966b3d.js"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 75px;
+  background: #101010;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #181818;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #ff3040;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: white;
+}
+
+.search {
+  background: #292929;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 13px;
+  width: min(45%, 200px);
+  outline: none;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.categories button {
+  border: 0;
+  border-radius: 20px;
+  padding: 9px 16px;
+  background: #292929;
+  color: white;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.categories button.active {
+  background: #ff3040;
+}
+
+h3 {
+  margin: 5px 15px 15px;
+}
+
+/* Shopee Affiliate */
+.shopee-promo {
+  margin: 0 12px 22px;
+  padding: 18px 14px;
+  text-align: center;
+  background: #251713;
+  border: 1px solid #ee4d2d;
+  border-radius: 13px;
+}
+
+.shopee-promo p {
+  color: #fff;
+  margin: 0 0 13px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.shopee-promo a {
+  display: inline-block;
+  background: #ee4d2d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 22px;
+  border-radius: 25px;
+  transition: background 0.2s;
+}
+
+.shopee-promo a:hover {
+  background: #d73216;
+}
+
+.video {
+  margin: 0 12px 22px;
+  background: #1c1c1c;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.cover {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+.cover video {
+  width: 100%;
+  display: block;
+  max-height: 75vh;
+  aspect-ratio: 9 / 12;
+  object-fit: contain;
+  background: #000;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  background: #0009;
+  border: 2px solid #ffffff80;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.play.hidden {
+  display: none;
+}
+
+.video-error {
+  padding: 15px;
+  color: #ff7777;
+  text-align: center;
+  font-size: 13px;
+  background: #1c1c1c;
+}
+
+.info {
+  padding: 12px;
+}
+
+.info h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.info p {
+  margin: 0;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  color: #ddd;
+}
+
+.actions button {
+  background: none;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.actions button.liked {
+  color: #ff3040;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #181818;
+  display: flex;
+  justify-content: space-around;
+  padding: 13px 5px;
+  z-index: 10;
+  border-top: 1px solid #333;
+}
+
+nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+nav a:first-child {
+  color: #ff3040;
+}
+
+.empty {
+  padding: 30px;
+  text-align: center;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+  <div class="logo">Vjdey<span>lokal.</span></div>
+  <input
+    class="search"
+    id="search"
+    type="search"
+    placeholder="Cari video..."
+    aria-label="Cari video"
+  >
+</header>
+
+<div class="categories">
+  <button class="active" data-cat="Semua"></button>
+  <button data-cat="ASUPAN LOKAL"></button>
+</div>
+
+<h3 id="heading">🔥 4supan T3rb4ru dan T3rp0pul3r</h3>
+
+<!-- Tombol Shopee Affiliate -->
+<div class="shopee-promo">
+  <p>4SUP4N L4INNY4 ⬇️</p>
+  <a
+    href="https://s.shopee.co.id/gQufsrGNE"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+  >
+    T0NTN SK4R4NG⏭️
+  </a>
+</div>
+
+<main id="videos"></main>
+
+<nav>
+  <a href="#top">⌂<br>Home</a>
+  <a href="#videos" data-filter="Terbaru">🔥<br>Trending</a>
+  <a href="#videos" data-filter="Semua">▶<br>Video</a>
+  <a href="#videos" data-favorites="true">♡<br>Favorit</a>
+</nav>
+
+<script>
+  // Ganti URL contoh dengan video milik sendiri atau
+  // video yang memiliki izin untuk dipublikasikan.
+  const data = [
+    {
+      title: "Video Viral Terbaru",
+      cat: "Trending",
+      views: "Video pilihan",
+      url: "https://videotourl.com/videos/1792302566798-2e56abba-e131-4d5c-986c-d492649a5bd2.mp4",
+      poster: "https://imagetourls.com/id/v?u=https%3A%2F%2Fcdn.imagetourls.com%2Fuploads%2FtyImg%2FtBle2mKX.jpg"
+    },
+    {
+      title: "Video Lokal Pilihan",
+      cat: "Lokal",
+      views: "Video pilihan",
+      url: "https://videotourl.com/videos/1792302529526-5e51f4e1-1b2a-440a-87aa-819df0a5ae10.mp4",
+      poster: "https://pin.it/4UJv2KcRh"
+    },
+    {
+      title: "Video Trending",
+      cat: "Trending",
+      views: "Video pilihan",
+      url: "https://videotourl.com/videos/1792302458533-6550b982-a0f1-430a-a300-30a917707d2c.mp4",
+      poster: "https://pin.it/4UJv2KcRh"
+    }
+  ];
+
+let category = "Semua";
+let favoritesOnly = false;
+const favorites = new Set();
+
+const videos = document.getElementById("videos");
+const search = document.getElementById("search");
+const heading = document.getElementById("heading");
+
+function escapeHTML(value) {
+  return String(value ?? "").replace(/[&<>"']/g, ch => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[ch]);
+}
+
+function stopVideos() {
+  videos.querySelectorAll("video").forEach(video => {
+    video.pause();
+  });
+}
+
+function render() {
+  const q = search.value.toLowerCase().trim();
+
+  const list = data
+    .map((v, index) => ({ ...v, index }))
+    .filter(v =>
+      (category === "Semua" || v.cat === category) &&
+      (v.title + " " + v.cat).toLowerCase().includes(q) &&
+      (!favoritesOnly || favorites.has(v.index))
+    );
+
+  if (!list.length) {
+    videos.innerHTML =
+      '<div class="empty">Video tidak ditemukan.</div>';
+    return;
+  }
+
+  videos.innerHTML = list.map(v => `
+    <article class="video">
+      <div class="cover">
+        <video
+          src="${escapeHTML(v.url)}"
+          controls
+          playsinline
+          preload="metadata"
+          data-index="${v.index}"
+          aria-label="${escapeHTML(v.title)}">
+          Browser kamu tidak mendukung video HTML5.
+        </video>
+
+        <button
+          class="play"
+          type="button"
+          data-action="play"
+          data-index="${v.index}"
+          aria-label="Putar video">
+          ▶
+        </button>
+      </div>
+
+      <div class="info">
+        <h4>${escapeHTML(v.title)}</h4>
+        <p>${escapeHTML(v.cat)} · ${escapeHTML(v.views)} tayangan</p>
+
+        <div class="actions">
+          <button
+            type="button"
+            data-action="like"
+            data-index="${v.index}"
+            class="${favorites.has(v.index) ? "liked" : ""}">
+            ${favorites.has(v.index) ? "♥ Disukai" : "♡ Suka"}
+          </button>
+
+          <button
+            type="button"
+            data-action="share"
+            data-index="${v.index}">
+            ↗ Bagikan
+          </button>
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+
+// Hanya satu video diputar pada satu waktu.
+videos.addEventListener("play", event => {
+  const current = event.target;
+  if (!(current instanceof HTMLVideoElement)) return;
+
+  videos.querySelectorAll("video").forEach(video => {
+    if (video !== current) video.pause();
+  });
+});
+
+videos.addEventListener("playing", event => {
+  const video = event.target;
+  if (!(video instanceof HTMLVideoElement)) return;
+
+  const button = video.closest(".cover")?.querySelector(".play");
+  if (button) button.classList.add("hidden");
+});
+
+videos.addEventListener("pause", event => {
+  const video = event.target;
+  if (!(video instanceof HTMLVideoElement)) return;
+
+  const button = video.closest(".cover")?.querySelector(".play");
+  if (button) button.classList.remove("hidden");
+});
+
+videos.addEventListener("ended", event => {
+  const video = event.target;
+  if (!(video instanceof HTMLVideoElement)) return;
+
+  const button = video.closest(".cover")?.querySelector(".play");
+  if (button) button.classList.remove("hidden");
+});
+
+videos.addEventListener("error", event => {
+  const video = event.target;
+  if (!(video instanceof HTMLVideoElement)) return;
+
+  const cover = video.closest(".cover");
+  if (!cover) return;
+
+  let message = cover.querySelector(".video-error");
+
+  if (!message) {
+    message = document.createElement("div");
+    message.className = "video-error";
+    cover.appendChild(message);
+  }
+
+  message.textContent =
+    "Video gagal dimuat. Periksa URL, koneksi, dan format MP4.";
+});
+
+// Tombol putar, suka, dan bagikan.
+videos.addEventListener("click", async event => {
+  const button = event.target.closest("button[data-action]");
+  if (!button) return;
+
+  const index = Number(button.dataset.index);
+  const action = button.dataset.action;
+
+  if (action === "play") {
+    const video = videos.querySelector(
+      `video[data-index="${index}"]`
+    );
+
+    if (!video) return;
+
+    if (video.paused) {
+      try {
+        await video.play();
+      } catch (error) {
+        console.error("Video gagal diputar:", error);
+        alert("Video tidak dapat diputar. Periksa URL MP4.");
+      }
+    } else {
+      video.pause();
+    }
+    return;
+  }
+
+  if (action === "like") {
+    if (favorites.has(index)) {
+      favorites.delete(index);
+    } else {
+      favorites.add(index);
+    }
+
+    render();
+    return;
+  }
+
+  if (action === "share") {
+    const video = data[index];
+
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: video.title,
+          url: video.url
+        });
+      } else if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(video.url);
+        alert("Link video berhasil disalin.");
+      } else {
+        window.prompt("Salin link video:", video.url);
+      }
+    } catch (error) {
+      if (error.name !== "AbortError") {
+        window.prompt("Salin link video:", video.url);
+      }
+    }
+  }
+});
+
+// Filter kategori.
+document.querySelector(".categories").addEventListener("click", event => {
+  const button = event.target.closest("button[data-cat]");
+  if (!button) return;
+
+  stopVideos();
+  category = button.dataset.cat;
+  favoritesOnly = false;
+
+  document.querySelectorAll(".categories button").forEach(b => {
+    b.classList.toggle("active", b === button);
+  });
+
+  heading.textContent = category === "Semua"
+    ? "🔥 Video Viral Hari Ini"
+    : "🔥 Video " + category;
+
+  render();
+});
+
+// Navigasi bawah.
+document.querySelector("nav").addEventListener("click", event => {
+  const link = event.target.closest("a");
+  if (!link) return;
+
+  if (link.dataset.filter) {
+    event.preventDefault();
+    stopVideos();
+
+    category = link.dataset.filter;
+    favoritesOnly = false;
+
+    document.querySelectorAll(".categories button").forEach(b => {
+      b.classList.toggle("active", b.dataset.cat === category);
+    });
+
+    heading.textContent = category === "Semua"
+      ? "🔥 Video Viral Hari Ini"
+      : "🔥 Video " + category;
+
+    render();
+  }
+
+  if (link.dataset.favorites) {
+    event.preventDefault();
+    stopVideos();
+
+    favoritesOnly = true;
+    category = "Semua";
+
+    document.querySelectorAll(".categories button").forEach(b => {
+      b.classList.toggle("active", b.dataset.cat === "Semua");
+    });
+
+    heading.textContent = "♡ Video Favorit";
+    render();
+  }
+});
+
+// Pencarian video.
+search.addEventListener("input", () => {
+  stopVideos();
+  render();
+});
+
+render();
+</script>
+
+</body>
+  </html>
