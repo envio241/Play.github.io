@@ -4,560 +4,498 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101010">
-<title>Asupan Link viral [PUTAR SEKARANG] </title>
-
-<!-- Adsterra Popunder -->
-<script src="https://uplcm.com/4/11810812"></script>
+<meta name="theme-color" content="#090711">
+<meta name="description" content="Spesial Edition - video pilihan">
+<title>Asupan Lengkap ☆TONTON SEKARANG☆ </title>
 
 <style>
-* {
-  box-sizing: border-box;
+:root {
+  --bg:#09070e;
+  --card:#151120;
+  --border:#393047;
+  --pink:#ff1758;
+  --purple:#a000ff;
+  --white:#fff;
 }
-
-body {
-  margin: 0;
-  padding-bottom: 75px;
-  background: #101010;
-  color: white;
-  font-family: Arial, sans-serif;
+*{box-sizing:border-box}
+body{
+  margin:0;color:var(--white);
+  background:radial-gradient(ellipse at 0 10%,#29053e,transparent 35%),
+  radial-gradient(ellipse at 100% 45%,#26051c,transparent 30%),var(--bg);
+  font-family:Arial,Helvetica,sans-serif;
 }
-
-header {
-  padding: 17px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  background: #181818;
-  position: sticky;
-  top: 0;
-  z-index: 5;
+button,input{font:inherit}
+button{cursor:pointer}
+.container{max-width:900px;margin:auto;padding:0 16px 30px}
+header{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:10px;min-height:95px;
 }
-
-.logo {
-  font-size: 23px;
-  font-weight: bold;
-  color: #ff3040;
-  white-space: nowrap;
+.logo{font-size:clamp(19px,5vw,34px);font-weight:900;letter-spacing:-1px}
+.gradient{
+  background:linear-gradient(90deg,#ff2358,#e000c9,#a000ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-
-.logo span {
-  color: white;
+.header-actions{display:flex;gap:8px}
+.icon-btn{border:0;background:none;color:white;font-size:29px;padding:5px}
+.search{display:none;margin:10px 0 22px}
+.search.show{display:block}
+.search input{
+  width:100%;padding:14px;border-radius:13px;
+  background:#171221;color:white;border:1px solid var(--border);
+  outline:none;
 }
-
-.search {
-  background: #292929;
-  color: white;
-  border: 0;
-  border-radius: 20px;
-  padding: 10px 13px;
-  width: min(45%, 200px);
-  outline: none;
+h1{font-size:clamp(25px,5.5vw,39px);margin:35px 0 24px}
+.categories{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:23px}
+.category{
+  padding:10px 14px;border-radius:30px;border:1px solid var(--border);
+  background:#151120;color:#eee;font-weight:bold;font-size:12px;
 }
-
-.categories {
-  display: flex;
-  gap: 10px;
-  padding: 15px;
-  overflow-x: auto;
+.category.active{background:linear-gradient(100deg,var(--pink),var(--purple));border-color:transparent}
+.list{display:grid;gap:17px}
+.card{
+  display:grid;
+  grid-template-columns:minmax(85px,190px) minmax(0,1fr) 53px;
+  gap:14px;align-items:center;padding:15px;
+  background:linear-gradient(120deg,#191427,#100d18);
+  border:1px solid var(--border);border-radius:29px;
+  transition:.2s;
 }
-
-.categories button {
-  border: 0;
-  border-radius: 20px;
-  padding: 9px 16px;
-  background: #292929;
-  color: white;
-  white-space: nowrap;
-  cursor: pointer;
+.card:hover{border-color:#c500ed}
+.thumb{
+  width:100%;aspect-ratio:1/.82;border-radius:21px;
+  background:linear-gradient(135deg,#7200ff,#f000a8);
+  overflow:hidden;display:flex;align-items:center;justify-content:center;
+  font-size:43px;position:relative;
 }
-
-.categories button.active {
-  background: #ff3040;
+.thumb img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.info{min-width:0}
+.title{font-size:clamp(15px,3.8vw,26px);font-weight:900;line-height:1.25;margin:0;text-transform:uppercase;overflow-wrap:anywhere}
+.meta{font-size:12px;color:#c5b9d1;margin-top:10px}
+.progress{height:6px;max-width:220px;width:100%;margin-top:15px;border-radius:20px;background:linear-gradient(90deg,#ff174f,#d900ce,#9200ff)}
+.actions{display:flex;flex-direction:column;align-items:center;gap:13px}
+.play{
+  width:51px;height:51px;border:2px solid white;border-radius:50%;
+  color:white;background:#090711;font-size:21px;
+  box-shadow:0 0 18px #e000a655;
 }
-
-h3 {
-  margin: 5px 15px 15px;
+.heart{border:0;background:none;color:#bcb2cb;font-size:24px;padding:0}
+.heart.active{color:#ff2b87}
+.external{color:#d9cde5;text-decoration:none;font-size:12px;text-align:center}
+.empty{display:none;text-align:center;padding:35px;color:#cfc4d9}
+.bottom{
+  position:sticky;bottom:8px;z-index:5;display:flex;gap:5px;
+  margin-top:28px;padding:10px 5px;border:1px solid var(--border);
+  border-radius:20px;background:#100d19ed;backdrop-filter:blur(12px);
 }
-
-/* Shopee Affiliate */
-.shopee-promo {
-  margin: 0 12px 22px;
-  padding: 18px 14px;
-  text-align: center;
-  background: #251713;
-  border: 1px solid #ee4d2d;
-  border-radius: 13px;
+.bottom button{flex:1;border:0;background:none;color:#cfc5dc;font-size:12px;padding:6px 2px}
+.bottom button span{display:block;font-size:21px;margin-bottom:5px}
+.bottom button.active{color:#ff36a0}
+.modal{
+  display:none;position:fixed;inset:0;z-index:20;
+  background:#000e;align-items:center;justify-content:center;padding:15px;
 }
-
-.shopee-promo p {
-  color: #fff;
-  margin: 0 0 13px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.shopee-promo a {
-  display: inline-block;
-  background: #ee4d2d;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 12px 22px;
-  border-radius: 25px;
-  transition: background 0.2s;
-}
-
-.shopee-promo a:hover {
-  background: #d73216;
-}
-
-.video {
-  margin: 0 12px 22px;
-  background: #1c1c1c;
-  border-radius: 13px;
-  overflow: hidden;
-}
-
-.cover {
-  position: relative;
-  background: #000;
-  overflow: hidden;
-}
-
-.cover video {
-  width: 100%;
-  display: block;
-  max-height: 75vh;
-  aspect-ratio: 9 / 12;
-  object-fit: contain;
-  background: #000;
-}
-
-.play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 65px;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  color: white;
-  background: #0009;
-  border: 2px solid #ffffff80;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.play.hidden {
-  display: none;
-}
-
-.video-error {
-  padding: 15px;
-  color: #ff7777;
-  text-align: center;
-  font-size: 13px;
-  background: #1c1c1c;
-}
-
-.info {
-  padding: 12px;
-}
-
-.info h4 {
-  margin: 0 0 8px;
-  font-size: 16px;
-}
-
-.info p {
-  margin: 0;
-  color: #aaa;
-  font-size: 12px;
-}
-
-.actions {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 12px;
-  color: #ddd;
-}
-
-.actions button {
-  background: none;
-  border: 0;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.actions button.liked {
-  color: #ff3040;
-}
-
-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #181818;
-  display: flex;
-  justify-content: space-around;
-  padding: 13px 5px;
-  z-index: 10;
-  border-top: 1px solid #333;
-}
-
-nav a {
-  color: #bbb;
-  text-decoration: none;
-  font-size: 12px;
-  text-align: center;
-}
-
-nav a:first-child {
-  color: #ff3040;
-}
-
-.empty {
-  padding: 30px;
-  text-align: center;
-  color: #aaa;
+.modal.open{display:flex}
+.modal-content{width:min(100%,760px);padding:15px;background:#15101d;border:1px solid #49304e;border-radius:20px}
+.modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.modal-head button{border:0;background:none;color:white;font-size:28px}
+video{width:100%;max-height:70vh;background:#000;border-radius:12px}
+.notice{font-size:12px;color:#c7b9d0;line-height:1.5}
+@media(max-width:480px){
+  .container{padding-left:12px;padding-right:12px}
+  .card{grid-template-columns:minmax(72px,29%) minmax(0,1fr) 43px;gap:10px;padding:12px;border-radius:25px}
+  .thumb{border-radius:18px;font-size:33px}
+  .title{font-size:clamp(14px,3.8vw,20px)}
+  .play{width:42px;height:42px;font-size:18px}
+  .actions{gap:10px}
+  .heart{font-size:22px}
 }
 </style>
 </head>
 
-<body id="top">
+<body>
+<main class="container">
 
 <header>
-  <div class="logo">Vjdey<span>lokal.</span></div>
-  <input
-    class="search"
-    id="search"
-    type="search"
-    placeholder="Cari video..."
-    aria-label="Cari video"
-  >
+  <div class="logo">▶ ASUPAN SPESIAL <span class="gradient">EDITION</span></div>
+  <div class="header-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="Cari">⌕</button>
+    <button class="icon-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
 </header>
 
-<div class="categories">
-  <button class="active" data-cat="Semua"></button>
-  <button data-cat="ASUPAN LOKAL"></button>
+<div class="search" id="searchBox">
+  <input id="searchInput" type="search" placeholder="Cari video..." autocomplete="off">
 </div>
 
-<h3 id="heading">🔥 ASUPAN PEMERSATU❤️‍🔥 </h3>
+<h1>▣ PILIH <span class="gradient">ASUPAN</span></h1>
 
-<!-- Tombol Shopee Affiliate -->
-<div class="shopee-promo">
-  <p>VIDEO LAINNYA👇 </p>
-  <a
-    href="https://uplcm.com/4/11810812"
-    target="_blank"
-    rel="nofollow sponsored noopener"
-  >
-    𝙋𝙐𝙏𝘼𝙍 𝙎𝙀𝙆𝘼𝙍𝘼𝙉𝙂 📽
-  </a>
+<div class="categories" id="categories">
+  <button class="category active" data-filter="Semua">SEMUA</button>
+  <button class="category" data-filter="Lokal">LOKAL</button>
+  <button class="category" data-filter="Terbaru">TERBARU</button>
+  <button class="category" data-filter="Favorit">FAVORIT</button>
 </div>
 
-<main id="videos"></main>
+<section class="list" id="videoList">
 
-<nav>
-  <a href="#top">⌂<br>Home</a>
-  <a href="#videos" data-filter="Terbaru">🔥<br>Trending</a>
-  <a href="#videos" data-filter="Semua">▶<br>Video</a>
-  <a href="#videos" data-favorites="true">♡<br>Favorit</a>
+<!-- VIDEO 1 -->
+<article class="card"
+data-title="Kak Heni Apemnya Pink Banget"
+data-category="Lokal"
+data-views="1.2 rb"
+data-video="https://videotourl.com/videos/1793864757671-74b28492-ca33-49f4-8cd5-f69748dad30b.mp4"
+data-link="">
+  <div class="thumb">
+    <img src="images/thumb1.jpg" alt="Thumbnail Kak Heni" onerror="this.style.display='none'">
+    🎞️
+  </div>
+  <div class="info">
+    <h2 class="title">KAK HENI APEMNYA PINK BANGET</h2>
+    <div class="meta">▶ <span class="views">1.2 rb</span> tayangan</div>
+    <div class="progress"></div>
+  </div>
+  <div class="actions">
+    <button class="play" aria-label="Putar">▶</button>
+    <button class="heart" aria-label="Favorit">♡</button>
+    <a class="external" href="#" target="_blank" rel="noopener" hidden>Buka ↗</a>
+  </div>
+</article>
+
+<!-- VIDEO 2 -->
+<article class="card"
+data-title="Kak Sinta Asetnya Istimewa"
+data-category="Lokal"
+data-views="850"
+data-video="https://videotourl.com/videos/1793117815847-e50d156f-73c5-4b08-9ef0-6d6355d7a00d.mp4"
+data-link="">
+  <div class="thumb">
+    <img src="images/thumb2.jpg" alt="Thumbnail Kak Sinta" onerror="this.style.display='none'">🎬
+  </div>
+  <div class="info">
+    <h2 class="title">KAK SINTA ASETNYA ISTIMEWA</h2>
+    <div class="meta">▶ <span class="views">850</span> tayangan</div>
+    <div class="progress"></div>
+  </div>
+  <div class="actions">
+    <button class="play" aria-label="Putar">▶</button>
+    <button class="heart" aria-label="Favorit">♡</button>
+    <a class="external" href="#" target="_blank" rel="noopener" hidden>Buka ↗</a>
+  </div>
+</article>
+
+<!-- VIDEO 3 -->
+<article class="card"
+data-title="Chika Esemah Gemar Berolahraga"
+data-category="Terbaru"
+data-views="2.4 rb"
+data-video="https://videotourl.com/videos/1793864882585-b158a514-2fe3-42cd-9212-bda99e43f17e.mp4"
+data-link="">
+  <div class="thumb">
+    <img src="images/thumb3.jpg" alt="Thumbnail Chika" onerror="this.style.display='none'">🎞️
+  </div>
+  <div class="info">
+    <h2 class="title">CHIKA ESEMAH GEMAR BEROLAHRAGA</h2>
+    <div class="meta">▶ <span class="views">2.4 rb</span> tayangan</div>
+    <div class="progress"></div>
+  </div>
+  <div class="actions">
+    <button class="play" aria-label="Putar">▶</button>
+    <button class="heart" aria-label="Favorit">♡</button>
+    <a class="external" href="#" target="_blank" rel="noopener" hidden>Buka ↗</a>
+  </div>
+</article>
+
+<!-- VIDEO 4 -->
+<article class="card"
+data-title="Talent Fanny Suka Singkong Ayang"
+data-category="Favorit"
+data-views="3 rb"
+data-video="https://videotourl.com/videos/1793865195798-266a41e3-2dfd-4142-87aa-575da2ef6d1d.mp4"
+data-link="">
+  <div class="thumb">
+    <img src="images/thumb4.jpg" alt="Thumbnail Fanny" onerror="this.style.display='none'">⭐
+  </div>
+  <div class="info">
+    <h2 class="title">TALENT FANNY SUKA SINGKONG AYANG</h2>
+    <div class="meta">▶ <span class="views">3 rb</span> tayangan</div>
+    <div class="progress"></div>
+  </div>
+  <div class="actions">
+    <button class="play" aria-label="Putar">▶</button>
+    <button class="heart" aria-label="Favorit">♡</button>
+    <a class="external" href="#" target="_blank" rel="noopener" hidden>Buka ↗</a>
+  </div>
+</article>
+
+<!-- VIDEO 5 -->
+<article class="card"
+data-title="Dek Laura Update Karya Baru Lagi"
+data-category="Terbaru"
+data-views="560"
+data-video="https://videotourl.com/videos/1793865178916-bf6d31ea-08f4-4292-a9a4-2df1acecea3a.mp4"
+data-link="">
+  <div class="thumb">
+    <img src="images/thumb5.jpg" alt="Thumbnail Laura" onerror="this.style.display='none'">📹
+  </div>
+  <div class="info">
+    <h2 class="title">DEK LAURA UPDATE KARYA BARU LAGI</h2>
+    <div class="meta">▶ <span class="views">560</span> tayangan</div>
+    <div class="progress"></div>
+  </div>
+  <div class="actions">
+    <button class="play" aria-label="Putar">▶</button>
+    <button class="heart" aria-label="Favorit">♡</button>
+    <a class="external" href="#" target="_blank" rel="noopener" hidden>Buka ↗</a>
+  </div>
+</article>
+
+</section>
+
+<div class="empty" id="empty">Video tidak ditemukan.</div>
+
+<nav class="bottom" aria-label="Navigasi">
+  <button class="active" data-nav="Semua"><span>⌂</span>Home</button>
+  <button data-nav="Terbaru"><span>🔥</span>Trending</button>
+  <button data-nav="Lokal"><span>▶</span>Video</button>
+  <button data-nav="Favorit"><span>♡</span>Favorit</button>
 </nav>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-content">
+    <div class="modal-head">
+      <strong id="modalTitle">Video</strong>
+      <button id="close" aria-label="Tutup">×</button>
+    </div>
+    <video id="player" controls playsinline preload="metadata"></video>
+    <p class="notice" id="notice">Tekan Play untuk memutar video.</p>
+  </div>
+</div>
 
 <script>
-  // Ganti URL contoh dengan video milik sendiri atau
-  // video yang memiliki izin untuk dipublikasikan.
-  const data = [
-    {
-      title: "Video Viral Terbaru",
-      cat: "Trending",
-      views: "Video pilihan",
-      url: "https://videotourl.com/videos/1793117815847-e50d156f-73c5-4b08-9ef0-6d6355d7a00d.mp4",
-      poster: "https://imagetourls.com/id/v?u=https%3A%2F%2Fcdn.imagetourls.com%2Fuploads%2FtyImg%2FtBle2mKX.jpg"
+// LINK DIRECT MONETAG ANDA
+const MONETAG_LINK = "https://uplcm.com/4/11810812";
+
+const cards = [...document.querySelectorAll(".card")];
+const filters = [...document.querySelectorAll("[data-filter]")];
+const navs = [...document.querySelectorAll("[data-nav]")];
+const searchInput = document.getElementById("searchInput");
+const searchBox = document.getElementById("searchBox");
+const categoryBox = document.getElementById("categories");
+const modal = document.getElementById("modal");
+const player = document.getElementById("player");
+const notice = document.getElementById("notice");
+
+let activeFilter = "Semua";
+
+function getFavorites() {
+  try {
+    return JSON.parse(localStorage.getItem("se-favorites") || "[]");
+  } catch {
+    return [];
+  }
+}
+
+function saveFavorites(ids) {
+  try {
+    localStorage.setItem("se-favorites", JSON.stringify(ids));
+  } catch {}
+}
+
+function cardId(card) {
+  return card.dataset.title;
+}
+
+function updateFavorites() {
+  const favorites = getFavorites();
+
+  cards.forEach(card => {
+    const active = favorites.includes(cardId(card));
+    const button = card.querySelector(".heart");
+
+    button.classList.toggle("active", active);
+    button.textContent = active ? "♥" : "♡";
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+
+function filterVideos() {
+  const query = searchInput.value.trim().toLowerCase();
+  const favorites = getFavorites();
+  let count = 0;
+
+  cards.forEach(card => {
+    const title = card.dataset.title.toLowerCase();
+    const category = card.dataset.category;
+    const favorite = favorites.includes(cardId(card));
+
+    const matchQuery = title.includes(query);
+    const matchFilter =
+      activeFilter === "Semua" ||
+      (activeFilter === "Favorit"
+        ? favorite
+        : category === activeFilter);
+
+    const visible = matchQuery && matchFilter;
+    card.style.display = visible ? "grid" : "none";
+
+    if (visible) count++;
+  });
+
+  document.getElementById("empty").style.display =
+    count ? "none" : "block";
+}
+
+function setFilter(value) {
+  activeFilter = value;
+
+  filters.forEach(button => {
+    button.classList.toggle("active", button.dataset.filter === value);
+  });
+
+  navs.forEach(button => {
+    button.classList.toggle("active", button.dataset.nav === value);
+  });
+
+  filterVideos();
+}
+
+// KATEGORI
+filters.forEach(button => {
+  button.addEventListener("click", () => {
+    setFilter(button.dataset.filter);
+  });
+});
+
+// NAVIGASI
+navs.forEach(button => {
+  button.addEventListener("click", () => {
+    setFilter(button.dataset.nav);
+    window.scrollTo({top: 0, behavior: "smooth"});
+  });
+});
+
+// PENCARIAN
+searchInput.addEventListener("input", filterVideos);
+
+document.getElementById("searchBtn").addEventListener("click", () => {
+  searchBox.classList.toggle("show");
+
+  if (searchBox.classList.contains("show")) {
+    searchInput.focus();
+  } else {
+    searchInput.value = "";
+    filterVideos();
+  }
+});
+
+// MENU
+document.getElementById("menuBtn").addEventListener("click", () => {
+  categoryBox.hidden = !categoryBox.hidden;
+  document.getElementById("menuBtn").textContent =
+    categoryBox.hidden ? "☰" : "×";
+});
+
+// FAVORIT, LINK, DAN TOMBOL PLAY
+cards.forEach(card => {
+  const heart = card.querySelector(".heart");
+
+  heart.addEventListener("click", () => {
+    const favorites = getFavorites();
+    const id = cardId(card);
+    const index = favorites.indexOf(id);
+
+    if (index >= 0) favorites.splice(index, 1);
+    else favorites.push(id);
+
+    saveFavorites(favorites);
+    updateFavorites();
+    filterVideos();
+  });
+
+  // LINK EKSTERNAL
+  const external = card.querySelector(".external");
+  const link = (card.dataset.link || "").trim();
+
+  if (link && /^https?:\/\//i.test(link)) {
+    external.href = link;
+    external.hidden = false;
+  }
+
+  // TOMBOL SEGITIGA: IKLAN MONETAG + VIDEO
+  card.querySelector(".play").addEventListener("click", () => {
+
+    // Buka Direct Link Monetag dari klik pengguna
+    const adWindow = window.open(MONETAG_LINK, "_blank");
+
+    // Tampilkan informasi jika tab iklan diblokir
+    if (!adWindow) {
+      notice.textContent =
+        "Tab iklan diblokir browser. Izinkan pop-up untuk situs ini.";
     }
-  ];
 
-let category = "Semua";
-let favoritesOnly = false;
-const favorites = new Set();
+    // Periksa URL video
+    const videoUrl = (card.dataset.video || "").trim();
 
-const videos = document.getElementById("videos");
-const search = document.getElementById("search");
-const heading = document.getElementById("heading");
+    if (!videoUrl || videoUrl.startsWith("GANTI_")) {
+      notice.textContent = "Alamat video belum diisi dengan URL MP4.";
+      modal.classList.add("open");
+      return;
+    }
 
-function escapeHTML(value) {
-  return String(value ?? "").replace(/[&<>"']/g, ch => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#39;"
-  })[ch]);
-}
+    document.getElementById("modalTitle").textContent =
+      card.dataset.title;
 
-function stopVideos() {
-  videos.querySelectorAll("video").forEach(video => {
-    video.pause();
-  });
-}
+    // Hentikan video sebelumnya
+    player.pause();
+    player.removeAttribute("src");
+    player.load();
 
-function render() {
-  const q = search.value.toLowerCase().trim();
+    // Buka modal video
+    notice.textContent = "Memuat video...";
+    modal.classList.add("open");
 
-  const list = data
-    .map((v, index) => ({ ...v, index }))
-    .filter(v =>
-      (category === "Semua" || v.cat === category) &&
-      (v.title + " " + v.cat).toLowerCase().includes(q) &&
-      (!favoritesOnly || favorites.has(v.index))
-    );
+    player.src = videoUrl;
+    player.load();
 
-  if (!list.length) {
-    videos.innerHTML =
-      '<div class="empty">Video tidak ditemukan.</div>';
-    return;
-  }
-
-  videos.innerHTML = list.map(v => `
-    <article class="video">
-      <div class="cover">
-        <video
-          src="${escapeHTML(v.url)}"
-          controls
-          playsinline
-          preload="metadata"
-          data-index="${v.index}"
-          aria-label="${escapeHTML(v.title)}">
-          Browser kamu tidak mendukung video HTML5.
-        </video>
-
-        <button
-          class="play"
-          type="button"
-          data-action="play"
-          data-index="${v.index}"
-          aria-label="Putar video">
-          ▶
-        </button>
-      </div>
-
-      <div class="info">
-        <h4>${escapeHTML(v.title)}</h4>
-        <p>${escapeHTML(v.cat)} · ${escapeHTML(v.views)} tayangan</p>
-
-        <div class="actions">
-          <button
-            type="button"
-            data-action="like"
-            data-index="${v.index}"
-            class="${favorites.has(v.index) ? "liked" : ""}">
-            ${favorites.has(v.index) ? "♥ Disukai" : "♡ Suka"}
-          </button>
-
-          <button
-            type="button"
-            data-action="share"
-            data-index="${v.index}">
-            ↗ Bagikan
-          </button>
-        </div>
-      </div>
-    </article>
-  `).join("");
-}
-
-// Hanya satu video diputar pada satu waktu.
-videos.addEventListener("play", event => {
-  const current = event.target;
-  if (!(current instanceof HTMLVideoElement)) return;
-
-  videos.querySelectorAll("video").forEach(video => {
-    if (video !== current) video.pause();
+    player.play().then(() => {
+      notice.textContent = "Video sedang diputar.";
+    }).catch(() => {
+      notice.textContent =
+        "Tekan Play untuk memutar video.";
+    });
   });
 });
 
-videos.addEventListener("playing", event => {
-  const video = event.target;
-  if (!(video instanceof HTMLVideoElement)) return;
-
-  const button = video.closest(".cover")?.querySelector(".play");
-  if (button) button.classList.add("hidden");
-});
-
-videos.addEventListener("pause", event => {
-  const video = event.target;
-  if (!(video instanceof HTMLVideoElement)) return;
-
-  const button = video.closest(".cover")?.querySelector(".play");
-  if (button) button.classList.remove("hidden");
-});
-
-videos.addEventListener("ended", event => {
-  const video = event.target;
-  if (!(video instanceof HTMLVideoElement)) return;
-
-  const button = video.closest(".cover")?.querySelector(".play");
-  if (button) button.classList.remove("hidden");
-});
-
-videos.addEventListener("error", event => {
-  const video = event.target;
-  if (!(video instanceof HTMLVideoElement)) return;
-
-  const cover = video.closest(".cover");
-  if (!cover) return;
-
-  let message = cover.querySelector(".video-error");
-
-  if (!message) {
-    message = document.createElement("div");
-    message.className = "video-error";
-    cover.appendChild(message);
-  }
-
-  message.textContent =
+// ERROR VIDEO
+player.addEventListener("error", () => {
+  notice.textContent =
     "Video gagal dimuat. Periksa URL, koneksi, dan format MP4.";
 });
 
-// Tombol putar, suka, dan bagikan.
-videos.addEventListener("click", async event => {
-  const button = event.target.closest("button[data-action]");
-  if (!button) return;
+// TUTUP MODAL
+function closeModal() {
+  player.pause();
+  player.removeAttribute("src");
+  player.load();
+  modal.classList.remove("open");
+}
 
-  const index = Number(button.dataset.index);
-  const action = button.dataset.action;
+document.getElementById("close").addEventListener("click", closeModal);
 
-  if (action === "play") {
-    const video = videos.querySelector(
-      `video[data-index="${index}"]`
-    );
-
-    if (!video) return;
-
-    if (video.paused) {
-      try {
-        await video.play();
-      } catch (error) {
-        console.error("Video gagal diputar:", error);
-        alert("Video tidak dapat diputar. Periksa URL MP4.");
-      }
-    } else {
-      video.pause();
-    }
-    return;
-  }
-
-  if (action === "like") {
-    if (favorites.has(index)) {
-      favorites.delete(index);
-    } else {
-      favorites.add(index);
-    }
-
-    render();
-    return;
-  }
-
-  if (action === "share") {
-    const video = data[index];
-
-    try {
-      if (navigator.share) {
-        await navigator.share({
-          title: video.title,
-          url: video.url
-        });
-      } else if (navigator.clipboard && window.isSecureContext) {
-        await navigator.clipboard.writeText(video.url);
-        alert("Link video berhasil disalin.");
-      } else {
-        window.prompt("Salin link video:", video.url);
-      }
-    } catch (error) {
-      if (error.name !== "AbortError") {
-        window.prompt("Salin link video:", video.url);
-      }
-    }
-  }
+modal.addEventListener("click", event => {
+  if (event.target === modal) closeModal();
 });
 
-// Filter kategori.
-document.querySelector(".categories").addEventListener("click", event => {
-  const button = event.target.closest("button[data-cat]");
-  if (!button) return;
-
-  stopVideos();
-  category = button.dataset.cat;
-  favoritesOnly = false;
-
-  document.querySelectorAll(".categories button").forEach(b => {
-    b.classList.toggle("active", b === button);
-  });
-
-  heading.textContent = category === "Semua"
-    ? "🔥 Video Viral Hari Ini"
-    : "🔥 Video " + category;
-
-  render();
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeModal();
 });
 
-// Navigasi bawah.
-document.querySelector("nav").addEventListener("click", event => {
-  const link = event.target.closest("a");
-  if (!link) return;
-
-  if (link.dataset.filter) {
-    event.preventDefault();
-    stopVideos();
-
-    category = link.dataset.filter;
-    favoritesOnly = false;
-
-    document.querySelectorAll(".categories button").forEach(b => {
-      b.classList.toggle("active", b.dataset.cat === category);
-    });
-
-    heading.textContent = category === "Semua"
-      ? "🔥 Video Viral Hari Ini"
-      : "🔥 Video " + category;
-
-    render();
-  }
-
-  if (link.dataset.favorites) {
-    event.preventDefault();
-    stopVideos();
-
-    favoritesOnly = true;
-    category = "Semua";
-
-    document.querySelectorAll(".categories button").forEach(b => {
-      b.classList.toggle("active", b.dataset.cat === "Semua");
-    });
-
-    heading.textContent = "♡ Video Favorit";
-    render();
-  }
-});
-
-// Pencarian video.
-search.addEventListener("input", () => {
-  stopVideos();
-  render();
-});
-
-render();
+// INISIALISASI
+updateFavorites();
+filterVideos();
 </script>
 
 </body>
-  </html>
+</html>
