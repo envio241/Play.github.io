@@ -5,28 +5,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<title>Video News</title>
+
+<title>Vldey - Video Terbaru</title>
 
 <style>
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background: #fff;
+  background: #ffffff;
   color: #111827;
 }
 
-.header {
-  height: 100px;
+header {
+  height: 105px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 25px;
-  border-bottom: 1px solid #eee;
+  padding: 20px 4%;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .logo {
@@ -42,106 +43,119 @@ body {
   height: 60px;
   background: #111827;
   color: white;
+  border-radius: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 14px;
-  font-size: 32px;
 }
 
 .logo span {
-  color: #3984e9;
+  color: #3985e9;
 }
 
 .upload {
   background: #111827;
   color: white;
   border: none;
+  padding: 20px 30px;
   border-radius: 25px;
-  padding: 18px 30px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .container {
-  padding: 25px 20px;
+  padding: 28px 4%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .advertise {
-  font-size: 29px;
+  font-size: 25px;
   color: #64748b;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
 .video-card {
   width: 100%;
-  max-width: 850px;
-  margin: auto;
-  position: relative;
   overflow: hidden;
-  border-radius: 40px;
-  background: #111;
-  aspect-ratio: 9 / 16;
-  box-shadow: 0 8px 30px rgba(0,0,0,.15);
+  border-radius: 35px;
+  background: white;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.12);
 }
 
-.video-card video {
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: #111;
+}
+
+.thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.video-click-area {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  width: 100%;
-  height: 100%;
-}
-
-.video-click-area.hidden {
-  display: none;
-}
-
 .play-button {
-  width: 170px;
-  height: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: rgba(255,255,255,0.95);
   border-radius: 50%;
-  background: rgba(255,255,255,.96);
-  border: none;
   display: flex;
-  justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 25px rgba(0,0,0,.25);
-  transition: transform .2s;
-  pointer-events: none;
+  justify-content: center;
+  font-size: 48px;
+  color: #000;
+  padding-left: 7px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: 0.2s;
 }
 
-.video-click-area:active .play-button {
-  transform: scale(.92);
+.thumbnail:hover .play-button {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
-.play-button::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 34px solid transparent;
-  border-bottom: 34px solid transparent;
-  border-left: 50px solid #000;
-  margin-left: 12px;
+.video-info {
+  padding: 18px;
+}
+
+.video-info h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.watch {
+  display: block;
+  text-align: center;
+  background: #111827;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media(max-width:600px) {
-  .header {
-    height: 90px;
-    padding: 12px 15px;
+  .video-list {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  header {
+    height: 85px;
   }
 
   .logo {
@@ -149,31 +163,18 @@ body {
   }
 
   .logo-icon {
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
   }
 
   .upload {
-    padding: 15px 22px;
-    font-size: 17px;
-  }
-
-  .container {
-    padding: 25px 15px;
-  }
-
-  .advertise {
-    font-size: 27px;
-    margin-bottom: 60px;
-  }
-
-  .video-card {
-    border-radius: 35px;
+    padding: 15px 20px;
   }
 
   .play-button {
-    width: 150px;
-    height: 150px;
+    width: 105px;
+    height: 105px;
+    font-size: 43px;
   }
 }
 </style>
@@ -181,128 +182,85 @@ body {
 
 <body>
 
-<header class="header">
+<header>
   <div class="logo">
     <div class="logo-icon">V</div>
     <div>vldey<span>.co</span></div>
   </div>
 
-  <button class="upload" type="button">
-    Upload
-  </button>
+  <button class="upload">Upload</button>
 </header>
 
-<main class="container">
+<div class="container">
 
   <div class="advertise">Advertise</div>
 
-  <div class="video-card">
+  <div class="video-list">
 
-    <video
-      id="myVideo"
-      poster="https://cdn.phototourl.com/anon/2026-11-19-d835b5d4-a179-4097-838f-41cbd6e7dfc0.jpg"
-      playsinline
-      preload="metadata"
-    >
-      <source
-        src="https://videotourl.com/videos/1793864757671-74b28492-ca33-49f4-8cd5-f69748dad30b.mp4"
-        type="video/mp4">
-    </video>
+    <!-- VIDEO 1 -->
+    <div class="video-card">
 
-    <button
-      class="video-click-area"
-      id="clickArea"
-      type="button"
-      aria-label="Putar video">
+      <div class="thumbnail" onclick="openAd()">
 
-      <span class="play-button"></span>
+        <img src="https://cdn.phototourl.com/anon/2026-11-20-6386293e-2d0f-4916-b53f-7952c20ed934.jpg"
+             alt="Thumbnail Video 1">
 
-    </button>
+        <div class="play-button">▶</div>
+
+      </div>
+
+      <div class="video-info">
+        <h3></h3>
+
+        <a class="watch"
+           href="https://videotourl.com/videos/1794844718436-ece839cc-56c2-41d7-8ca3-f5e51cca58ef.mp4"
+           target="_blank">
+          NEXT
+        </a>
+      </div>
+
+    </div>
+
+
+    <!-- VIDEO 2 -->
+    <div class="video-card">
+
+      <div class="thumbnail" onclick="openAd()">
+
+        <img src="https://cdn.phototourl.com/anon/2026-11-20-96d5ad9a-e032-49f0-97af-70f56d488e87.jpg"
+             alt="Thumbnail Video 2">
+
+        <div class="play-button">▶</div>
+
+      </div>
+
+      <div class="video-info">
+        <h3></h3>
+
+        <a class="watch"
+           href="https://videotourl.com/videos/1794844814468-1f08ec40-daea-44be-a129-7ed791021125.mp4"
+           target="_blank">
+          NEXT
+        </a>
+      </div>
+
+    </div>
 
   </div>
-
-</main>
+</div>
 
 <script>
 
-/* =================================
-   MONETAG DIRECT LINK
-================================= */
+// LINK DIRECT MONETAG
+const MONETAG_LINK = "https://uplcm.com/4/11810812";
 
-const MONETAG_LINK =
-"https://s.shopee.co.id/7KyfoIa00A";
-
-/* =================================
-   VIDEO PLAYER
-================================= */
-
-const video = document.getElementById("myVideo");
-const clickArea = document.getElementById("clickArea");
-
-let sudahKlik = false;
-
-clickArea.addEventListener("click", function() {
-
-  // BUKA IKLAN MONETAG SATU KALI
-  // PADA KLIK PERTAMA
-
-  if (!sudahKlik) {
-
-    window.open(
-      MONETAG_LINK,
-      "_blank",
-      "noopener,noreferrer"
-    );
-
-    sudahKlik = true;
-  }
-
-  // PUTAR VIDEO
-  video.play().then(function() {
-
-    clickArea.classList.add("hidden");
-    video.controls = true;
-
-  }).catch(function() {
-
-    video.controls = false;
-    clickArea.classList.remove("hidden");
-
-    alert("Video gagal diputar. Periksa link MP4.");
-
-  });
-
-});
-
-/* SAAT VIDEO DIPUTAR */
-
-video.addEventListener("play", function() {
-  clickArea.classList.add("hidden");
-  video.controls = true;
-});
-
-/* SAAT VIDEO DIJEDA */
-
-video.addEventListener("pause", function() {
-
-  if (!video.ended) {
-    video.controls = false;
-    clickArea.classList.remove("hidden");
-  }
-
-});
-
-/* SAAT VIDEO SELESAI */
-
-video.addEventListener("ended", function() {
-
-  video.controls = false;
-  clickArea.classList.remove("hidden");
-
-});
+// KLIK THUMBNAIL DAN PLAY
+function openAd() {
+  window.open(MONETAG_LINK, "_blank");
+}
 
 </script>
-<!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+  <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
 <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,5062706,4,511,95,18,00000000']);
